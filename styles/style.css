@@ -53,5 +53,6 @@ section[id="hero"] {
 
     &>img {
         border-radius: 32px;
+        object-fit: cover;
     }
 }
