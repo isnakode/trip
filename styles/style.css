@@ -1,0 +1,57 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    &>img {
+        object-fit: cover;
+    }
+
+    &>h1 {
+        font-size: 24px;
+    }
+
+    &>ul {
+        list-style: none;
+
+        &>li:hover {
+            text-decoration: underline;
+        }
+
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+button {
+    border: none;
+    background: #c52f2f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.button-white {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+
+section[id="hero"] {
+    h1 {
+        font-size: 40px;
+
+        &>span {
+            color: #c52f2f;
+
+        }
+    }
+
+    &>img {
+        border-radius: 32px;
+    }
+}
