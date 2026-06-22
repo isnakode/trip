@@ -1,11 +1,16 @@
+:root {
+    --primary: #c52f2f;
+}
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+img {
+    object-fit: cover;
+}
+
 header {
-    &>img {
-        object-fit: cover;
-    }
 
     &>h1 {
         font-size: 24px;
@@ -27,7 +32,7 @@ header {
 
 button {
     border: none;
-    background: #c52f2f;
+    background: var(--primary);
     color: white;
     padding: 8px 16px;
     border-radius: 9999px;
@@ -46,13 +51,39 @@ section[id="hero"] {
         font-size: 40px;
 
         &>span {
-            color: #c52f2f;
+            color: var(--primary);
 
         }
     }
 
     &>img {
         border-radius: 32px;
-        object-fit: cover;
     }
+}
+
+.kartu-trip {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    width: 200px;
+    border: 2px solid lightgray;
+    margin-bottom: 8px;
+
+    & img {
+        height: 120px;
+    }
+
+    & div {
+        padding: 0px 8px 16px 8px;
+    }
+
+    & .judul-trip {
+        font-weight: 600;
+    }
+
+    & .harga-trip {
+        font-weight: 600;
+        color: var(--primary);
+    }
+
 }
